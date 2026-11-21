@@ -1,0 +1,23 @@
+CUBICAJE PRODIMIN — versión independiente
+==========================================
+
+Contenido
+  index.html                 la herramienta completa (catálogo, siluetas, acomodo, informe PDF)
+  vendor/                    librerías incluidas (Three.js r160 y jsPDF 2.5.1); no necesita internet
+
+Cómo publicarla para que cualquiera con el enlace la use
+  Sube la carpeta completa (index.html + vendor/) a cualquier hosting de páginas estáticas:
+  - Intranet / servidor de TI de Prodimin (IIS, Apache, Nginx): copiar la carpeta al directorio web.
+  - Netlify (netlify.com): arrastrar la carpeta a "Deploy manually". Da un enlace público y permite
+    conectar un dominio propio (ej. cubicaje.prodimin.com.pe).
+  - GitHub Pages o Cloudflare Pages: igual, con dominio propio opcional.
+  No requiere base de datos, login ni cuentas de Claude o Kimi.
+
+Uso local
+  Con doble clic en index.html funcionan el catálogo, las vistas 2D y el informe PDF.
+  La vista 3D necesita abrirse desde un servidor (cualquiera de las opciones anteriores, o
+  en la PC: "python -m http.server" dentro de la carpeta y abrir http://localhost:8000).
+
+Datos
+  La carga, el alto de estiba editado y los datos del informe se guardan en el navegador de
+  cada usuario (no se comparten entre personas).
